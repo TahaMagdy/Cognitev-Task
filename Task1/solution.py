@@ -74,6 +74,8 @@ def showResults(dict, given_extensions):
     '''
         * It just loops over the dictionay {extension: [files.extension]
           and print the results each extension with the correspoding extension.
+        * parameter1: dict {extension: [file.extension]}
+        * parameter2: list of the given extensions (from the command-line)
     '''
     dict = support_ancillary('c', 'h', dict)
     dict = support_ancillary('py', 'pyc', dict)
@@ -93,6 +95,8 @@ def showResults(dict, given_extensions):
 def getExtensionsInit(dict, directory_content):
     '''
         * It initialize the dict with the directory files' extensions
+        * parameter1: dict {extension: [file.extension]}
+        * parameter2: list of directory content
     '''
     for fileName in directory_content:
         extension = getFileExtention(fileName)
