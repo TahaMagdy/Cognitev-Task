@@ -27,8 +27,8 @@
     =============
     - This script runs on UNIX/Linux (I saw that in the pdf you've send me,
        Windows has different commands)
-    - Path sould not contain any spaces.
-    - If you used python 2.x, then you will see () arount the printed lines.
+    - Path should not contain any spaces.
+    - If you used python 2.x, then you will see () around the printed lines.
 '''
 from sys import argv
 from os import popen
@@ -59,7 +59,7 @@ def support_ancillary(extension, ancillary, dict):
         * this to support other extension [ancillary]
           with the current [extension] like > .h with .c and so on.
         * Parameter 1: extension that you want to add ancillary to.
-        * Parameter 2: the ancillary externsion
+        * Parameter 2: the ancillary extension
         * Parameter 3: the dictionary {externsions: [files.extension]}
     '''
     if ancillary in dict:
@@ -72,8 +72,8 @@ def support_ancillary(extension, ancillary, dict):
 
 def showResults(dict, given_extensions):
     '''
-        * It just loops over the dictionay {extension: [files.extension]
-          and print the results each extension with the correspoding extension.
+        * It just loops over the dictionary {extension: [files.extension]
+          and print the results each extension with the corresponding extension.
         * parameter1: dict {extension: [file.extension]}
         * parameter2: list of the given extensions (from the command-line)
     '''
@@ -108,7 +108,7 @@ def main():
     '''
         * Computes the task
     '''
-    # Getting the command-line aruments {extension && directory}
+    # Getting the command-line arguments {extension && directory}
     given_extensions = argv[1].split(",")
     directory = ''
     if len(argv) > 2:
